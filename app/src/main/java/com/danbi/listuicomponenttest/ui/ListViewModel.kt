@@ -1,8 +1,6 @@
 package com.danbi.listuicomponenttest.ui
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.danbi.listuicomponenttest.Card
 import com.danbi.listuicomponenttest.ListSideEffect
 import com.danbi.listuicomponenttest.ListUiState
 import com.danbi.listuicomponenttest.Route
@@ -32,14 +30,6 @@ class ListViewModel : ViewModel() {
                 state.value.list.mapIndexed { index, it ->
                     it.copy(
                         name = "New Card $index",
-                        description = "New This is card number $index",
-                        date = "New 2025-03-31",
-                        category = "New Category ${index % 10}",
-                        address = "New $index",
-                        phone = "New 123-456-$index",
-                        email = "New card$index@example.com",
-                        price = (index * 0.1) + 1000,
-                        imageUrl = "New",
                     )
                 }
 

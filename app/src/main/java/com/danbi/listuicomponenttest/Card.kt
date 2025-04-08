@@ -1,7 +1,7 @@
 package com.danbi.listuicomponenttest
 
 const val INIT_CARD_SIZE_SMALL = 300000
-const val INIT_CARD_SIZE_MEDIUM = 460000
+const val INIT_CARD_SIZE_MEDIUM = 500000
 const val INIT_CARD_SIZE_LARGE = 800000
 
 data class Card(
